@@ -1,0 +1,30 @@
+header{
+    height: 150px;
+    width: 1000px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+div.nav{
+    height: 50px;
+    width: 1000px;
+    text-align: center;
+    border: 1px solid #ccc; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.body{
+    display: flex;
+    width: 1000px;
+    margin-bottom: 10px;
+}
+.left, .center, .right{
+    border: 1px solid #ccc;
+    text-align: center;
+    height: 500px;
+}
+.left, .right{
+    width: 20%;
+}
+.center{
+    width: 60%;
+}

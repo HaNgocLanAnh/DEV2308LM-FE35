@@ -1,0 +1,53 @@
+/* ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    width: 800px;
+    height: 60px;
+    background-color: dimgrey;
+}
+ul li{
+  display: inline;
+  padding: 20px;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+} */
+
+/* nội dung chữa */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+/* * mặc định tất cả các element đều định dạng như trên
+list-style: none; xoá dấu chấm đằng trước list
+text-decoration: none; loại bỏ dấu gạch chân ở thẻ a */
+.main-menu{
+    display: flex;
+    background-color: pink;
+    border-radius: 5px;
+    width: 100%;
+}
+.main-menu .option-menu{
+    padding: 8px 20px;
+    border-right: 1px solid;
+}
+.c-blue{
+    color: blue;
+}
+.main-menu .option-menu:last-child{
+    border-right: 0;
+}
+/* .main-menu .option-menu:nth-child(2){
+    border-right: 0;
+} */
+.main-menu .option-menu:hover a{
+    color: red;
+}
+/* :hover khi con trỏ chuột di tới sẽ đổi màu hoặc ... */

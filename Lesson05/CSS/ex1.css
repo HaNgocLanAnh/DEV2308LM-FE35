@@ -1,0 +1,26 @@
+footer{
+    height: 500px;
+    width: 500px;
+    background-color: aquamarine;
+}
+.header{
+    background-color: black;
+}
+/* '.' css cho các thuộc tính */
+#header{
+    background-color: dimgrey;
+}
+/* '#' css cho id */
+[data-attr]{
+    background-color: chocolate;
+}
+/* 'data-attr' css cho attr */
+#header{ 
+    background-color: red;
+}
+html .demo section{
+    color: pink !important;
+}
+section{
+    color: chartreuse;
+}
