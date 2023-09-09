@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+.main-menu{
+    display: flex;
+    background-color: rgb(58, 215, 68);
+    border-radius: 5px;
+    width: 100%;
+}
+.main-menu .option-menu{
+    padding: 8px 20px;
+    border-right: 1px solid;
+}
+.c-blue{
+    color: blue;
+}
+.main-menu .option-menu:last-child{
+    border-right: 0;
+}
+/* .main-menu .option-menu:nth-child(2n){
+    border-right: 0;
+} */
+.main-menu .option-menu:hover a{
+    color: rgb(246, 255, 0);
+}
+.main-menu .option-menu .option:hover{
+    color: red;
+}
+.mega-menu {
+    position: absolute;
+    /* position: absolute; tăng độ rộng của thằng con nhưng không ảnh hưởng độ rộng của thằng cha*/
+    background-color: rgb(12, 221, 221);
+    top: 100%; /* Viền trên đối với element cha: + nằm ở viền dưới thằng cha top:100%, nằm song song với ch thì top=0 ( left=0 or right=0 or right =100% or right=100%, nằm trong thì top=0*/
+    left: 0;
+    display: none;
+    width: 150px;
+}
+.option-menu{
+    position: relative;
+}
+.main-menu > .option-menu:hover .mega-menu{
+    display: block;
+}
+/* Dấu > là để chỉ cha và con*/
+/* ví dụ:
+<div class="div1">
+<div class="d1v2">
+    <div class="div3">
+
+    </div>
+</div>
+</div> */

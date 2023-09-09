@@ -1,0 +1,6 @@
+.list-card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap; câu lệnh xuống dòng */
+}
