@@ -50,7 +50,15 @@
     width: auto;
     height: 45px;
 }
+.page-content{
+    text-decoration: none;
+}
 .banner img{
     width: 100%;
-
+}
+.list-card{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap; câu lệnh xuống dòng */
 }
