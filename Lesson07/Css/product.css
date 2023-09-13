@@ -1,0 +1,39 @@
+.card-content{
+    position: relative;
+}
+.add-card{
+    opacity: 1;
+    display: none;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+}
+.add-card button{
+    width: 100%;
+    padding: 10px;
+}
+@keyframes showBtn{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.card:hover .add-card{
+    animation: showBtn 1s;
+    display: block;
+}
+.add{
+    position: absolute;
+    top: -428px;
+    left: 10%;
+    width: 50%;
+}
+.add p{
+    width: 20%;
+    background-color: rgb(236, 93, 93);
+    padding: 10px;
+    border: 1px solid rgb(236, 93, 93);
+    border-radius: 47%;
+}
+.add b{
+    color: white;
+}
