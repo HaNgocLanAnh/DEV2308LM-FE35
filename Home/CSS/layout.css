@@ -24,8 +24,9 @@ html{
     color: black;
 }
 .mb-2{
-    color: black;
+    margin-bottom: 1rem;
 }
+
 @media only screen and (max-width: 500px) {
     html{
         font-size: 10px;

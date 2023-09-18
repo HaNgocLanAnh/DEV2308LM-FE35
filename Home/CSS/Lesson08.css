@@ -97,12 +97,12 @@
     margin: auto;
     padding: 1.5rem;
 }
-@keyframes zoom {
+@keyframes zoom1 {
     from{scale: 0.75;}
     to{scale: 1;}
 }
 .page-card .card-top .card-img img:hover{
-    animation-name: zoom;
+    animation-name: zoom1;
     animation-duration: 1s;
     scale: 1;
 }
@@ -120,10 +120,15 @@
 .page-news h2{
     padding: 1rem;
 }
-.page-news .news-mid a{
-    padding: 1rem;
+.page-news .news-bot{
+    background-color: black;
+}
+/* .page-news .news-mid a{
+    padding: 0.25rem;
     color: red;
     font-size: 1rem;
+    border: 1px dashed white;
+    margin-top: 2rem;
 }
 .page-news .news-item{
     position: relative;
@@ -132,11 +137,33 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: white;
+
+}
+.list-news{
+    width: 80%;
+    margin: auto;
+    padding: 1.5rem;
+} */
+
+.page-news .news-content a{
+    border: 1px dashed white;
+    padding: 0.5rem;
+    color: red;
 }
 .list-news{
     width: 80%;
     margin: auto;
     padding: 1.5rem;
 }
-
+.page-news a:hover{
+    background-color: white;
+}
+@keyframes zoom2 {
+    from{scale: 0.95;}
+    to{scale: 1.05;}
+}
+.page-news .news-item > .news-img img:hover{
+    animation-name: zoom2;
+    animation-duration: 1s;
+    scale: 1;
+}
