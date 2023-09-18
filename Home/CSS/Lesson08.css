@@ -1,0 +1,142 @@
+.menu-cap-1{
+    width: 100%;
+    display: flex;
+}
+.c-red{
+    color: red;
+}
+.option-menu{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    position: relative;
+}
+.menu-cap-1 .option-menu{
+    border-left: 1px solid;
+}
+.menu-cap-1 .option-menu:first-child{
+    border-left: 0;
+}
+.option-menu:hover{
+    background-color: palevioletred;
+}
+.option-menu:hover .link{
+    color: blue;
+}
+.menu-cap-2{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #00CCFF;
+    width: 11.25rem;
+    display: none;
+}
+.option-menu:hover .menu-cap-2{
+    display: block;
+}
+.menu-cap-3{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #FF6699;
+    width: 250px;
+    display: none;
+}
+.option-menu:hover > .menu-cap-3{
+    display: block;
+}
+.nav{
+    display: flex;
+    background-color: black;
+    border-bottom: 1px solid;
+}
+.logo img{
+    width: auto;
+    height: 45px;
+}
+.page-card{
+    background-color: black;
+}
+.page-card .card-top{
+    position: relative;
+}
+.page-card .card-sale{
+    position: absolute;
+    background-color: red;
+    padding: 10px;
+    border-radius: 50%;
+    top: 1.5rem;
+    left: 1.5rem;
+}
+.page-card .card-mid button{
+    padding: 1rem;
+    color: red;
+    font-size: 1rem;
+}
+.page-card .card-item{
+    position: relative;
+}
+.page-card .card-mid{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    display: none;
+}
+.page-card .card-item:hover .card-mid{
+    display: block;
+}
+.page-card .card-item:hover{
+    box-shadow: -2px 0px 23px 4px rgba(0,0,0,0.28);
+    -webkit-box-shadow:-2px 0px 23px 4px  rgba(0,0,0,0.28);
+    -moz-box-shadow:-2px 0px 23px 4px rgba(0,0,0,0.28);
+}
+.page-card .card-bot{
+    text-align: center;
+}
+.list-card{
+    width: 80%;
+    margin: auto;
+    padding: 1.5rem;
+}
+@keyframes zoom {
+    from{scale: 0.75;}
+    to{scale: 1;}
+}
+.page-card .card-top .card-img img:hover{
+    animation-name: zoom;
+    animation-duration: 1s;
+    scale: 1;
+}
+.page-card .card-top .card-img{
+    overflow: hidden;
+}
+@media only screen and (max-width: 500px) {
+    .page-card .list-card .card-item.w-25{
+        width: 50%;
+    }
+  }
+.page-card h2{
+    padding: 1rem;
+}
+.page-news h2{
+    padding: 1rem;
+}
+.page-news .news-mid a{
+    padding: 1rem;
+    color: red;
+    font-size: 1rem;
+}
+.page-news .news-item{
+    position: relative;
+}
+.page-news .news-mid{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+}
+.list-news{
+    width: 80%;
+    margin: auto;
+    padding: 1.5rem;
+}
+
