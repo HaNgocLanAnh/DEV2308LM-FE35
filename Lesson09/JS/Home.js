@@ -154,3 +154,24 @@ console.log('Tổng của mảng arrNumber là: ', sum);
 
 //BTVN: tính tích tất cả các phần tử (convert về số)
 //      tính tổng và tích các phần tử ở vị trí chẵn
+
+// Tích tất cả phần tử (convert về số)
+var arrNumber1 =[2, 5, 7, '12', 10, '6'];
+var tich = 1;
+for(var i=0; i<arrNumber1.length; i++){
+    tich = parseInt(tich) * parseInt(arrNumber1[i]);
+}
+console.log('Tích các phần tử của mảng arrNumber1 là: ', tich);
+
+// tính tổng và tích các phần tử ở vị trí chẵn
+var chan = 0;
+var le = 0;
+for(var i=0; i<arrNumber1.length; i++){
+    if(i % 2 == 0){
+        chan = parseInt(chan) + parseInt(arrNumber1[i]);
+    } else{
+        le = parseInt(le) + parseInt(arrNumber1[i]);
+    }
+}
+console.log('Tổng các phần tử ở vị trí chẵn của mảng arrNumber1 là: ', chan);
+console.log('Tổng các phần tử lẻ ở vị trí lẻ của mảng arrNumber1 là: ', le);
