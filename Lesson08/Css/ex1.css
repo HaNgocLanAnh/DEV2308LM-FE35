@@ -1,0 +1,28 @@
+/* css cho element */
+footer{
+    height: 500px;
+    width: 1663px;
+    background-color: aquamarine;
+}
+/* css cho class */
+.header{
+    background-color: brown;
+}
+#header{
+    background-color: rgb(190, 234, 31);
+}
+/* css cho các thuộc tính */
+[data-attr="header"]{
+    background-color: blueviolet;
+}
+/* css cho id */
+#header{ 
+    background-color: rgb(234, 31, 197);
+}
+
+html .demo section{
+    color: blue !important;
+}
+html .demo section{
+    color: rgb(0, 255, 153) !important;
+}
