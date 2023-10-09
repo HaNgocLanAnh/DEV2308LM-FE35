@@ -337,18 +337,53 @@ search('hải phòng',170);
 // DOM...
 
 function showValueInput(){
+    debugger;
     var y = document.getElementById('username').value;
-console.log("Demo username: ", y);
+    console.log("Demo username: ", y);
 }
 
 var listProduct = [
     {
         id: 1,
-        name: "đông hồ",
+        name: "đồng hồ",
+        price: 10000000,
+        cate: 1
+    },
+    {
+        id: 2,
+        name: "nhẫn",
+        price: 20000000,
+        cate: 3
+    },
+    {
+        id: 3,
+        name: "điện thoại",
+        price: 50000000,
+        cate: 4
+    },
+    {
+        id: 4,
+        name: "quần áo",
+        price: 60000000,
+        cate: 2
     }
-]
+];
 
-//btvn: tạo listUser
+function searchProduct(){
+    debugger;
+    var name = document.getElementById('productName').value;
+    var tempProduct = false;
+    for(let i=0; i< listProduct.length; i++){
+        if(listProduct[i].name == name){
+            console.log("Tồn tại phần tử trùng tên ", listProduct[i]);
+            tempProduct = true;
+        }
+    }
+    if(!tempProduct) console.log("No data");
+}
 
+//btvn: tạo listUser (array object)
+//dừng lại form đăng nhập
+// bắt sự kiện khi click buttom đăng nhập => lấy ra giá trị 2 ô input
 //lưu ý về biến:
 //phạm vi của biến: local - global : cục bộ - toàn bộ

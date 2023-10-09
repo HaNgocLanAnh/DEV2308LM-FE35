@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+
+    <!-- anhha 231003 css layout -->
+    <link rel="stylesheet" href="../CSS/layout.css">
+    <!-- hầu như header và footer đều viết vào layout -->
+
+    <!-- css for page detail -->
+    <link rel="stylesheet" href="../CSS/home.css">
+    <!-- section viết vào file css riêng vì cụ thể hơn -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <header class="title-page">
+        <h1>Jquery phase 1</h1>
+    </header>
+
+    <section class="card-page">
+        <div class="list-item">
+            <!-- <div class="item item-card-1">
+                <div class="item-img">
+                    <img class="w-100" src="https://curnonwatch.com/_next/image/?url=https%3A%2F%2Fshop.curnonwatch.com%2Fmedia%2Fcatalog%2Fproduct%2Fd%2F_%2Fd.robust.png&w=640&q=75" alt="">
+                </div>
+                <div class="item-content">
+                    <div class="item-cate">
+                        <h3>Đồng hồ nam</h3>
+                    </div>
+                    <div class="item-name">
+                        <h4>Đồng hồ 1</h4>
+                    </div>
+                    <div class="item-price">
+                        <p><span class="price" data-price="10000000">10.000.000</span> <span class="unit">vnđ</span></p>
+                    </div>
+                </div>
+                <div class="item-quantity">
+                    <input onchange="summary()" type="number" name="quantity" id="quantity" class="quantity">
+                </div>
+            </div>
+            <div class="item item-card-2">
+                <div class="item-img">
+                    <img class="w-100" src="https://curnonwatch.com/_next/image/?url=https%3A%2F%2Fshop.curnonwatch.com%2Fmedia%2Fcatalog%2Fproduct%2Fd%2F_%2Fd.robust.png&w=640&q=75" alt="">
+                </div>
+                <div class="item-content">
+                    <div class="item-cate">
+                        <h3>Đồng hồ nam</h3>
+                    </div>
+                    <div class="item-name">
+                        <h4>Đồng hồ 1</h4>
+                    </div>
+                    <div class="item-price">
+                        <p><span class="price" data-price="10000000">10.000.000</span> <span class="unit">vnđ</span></p>
+                    </div>
+                </div>
+                <div class="item-quantity">
+                    <input onchange="summary()" type="number" name="quantity" id="quantity" class="quantity">
+                </div>
+            </div>
+            <div class="item item-card-3">
+                <div class="item-img">
+                    <img class="w-100" src="https://curnonwatch.com/_next/image/?url=https%3A%2F%2Fshop.curnonwatch.com%2Fmedia%2Fcatalog%2Fproduct%2Fd%2F_%2Fd.robust.png&w=640&q=75" alt="">
+                </div>
+                <div class="item-content">
+                    <div class="item-cate">
+                        <h3>Đồng hồ nam</h3>
+                    </div>
+                    <div class="item-name">
+                        <h4>Đồng hồ 1</h4>
+                    </div>
+                    <div class="item-price">
+                        <p><span class="price" data-price="10000000">10.000.000</span> <span class="unit">vnđ</span></p>
+                    </div>
+                </div>
+                <div class="item-quantity">
+                    <input onchange="summary()" type="number" name="quantity" id="quantity" class="quantity">
+                </div>
+            </div> -->
+        </div>
+
+        <div class="sum-product">
+            <div class="d-flex align-center">
+                <div class="btn-sum">
+                    <button class="btn" onclick="summary()">
+                        Tính tiền:
+                    </button>
+                </div>
+                <div class="text-price">
+                    <p>
+                        <span class="all-price">0</span>
+                        <span class="price-unit"> vnđ</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer></footer>
+    
+    <script src="../JS/common.js"></script>
+    <script src="../JS/home.js"></script>
+</body>
+</html>
