@@ -1,0 +1,30 @@
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+
+}
+.item{
+    width:18% ;
+    height: 100%;
+    margin-right: 7px;
+    border: 1px solid red;
+}
+img{
+    height: 60%;
+    width: 100%;
+}
+h1,h2{
+    height: 20%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h1:hover , h2:hover{
+    color: red;
+}
+.item:hover{
+    border:3px solid black;
+    border-color: rgb(0, 0, 0);
+}
